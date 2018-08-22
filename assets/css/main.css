@@ -1,5 +1,18 @@
 @import url(font-awesome.min.css);
 
+@font-face {
+	font-family: 'Open Sans';
+	src: url('OpenSans-Bold.ttf');
+	src: url('OpenSans-BoldItalic.ttf');
+	src: url('OpenSans-ExtraBold.ttf');
+	src: url('OpenSans-ExtraBoldItalic.ttf');
+	src: url('OpenSans-Italic.ttf');
+	src: url('OpenSans-LightItalic.ttf');
+	src: url('OpenSans-Regular.ttf');
+	src: url('OpenSans-SemiBold.ttf');
+	src: url('OpenSans-SemiBoldItalic.ttf');
+}
+
 /*
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
@@ -22,7 +35,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	font-family: 'Open Sans', sans-serif;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2530,14 +2544,7 @@ input, select, textarea {
 
 /* Welcome */
 
-	.picofme{
-		overflow:hidden;
-        border-radius:145px;
-        width:195px;
-        height:213px;
-        float:left;
-        position:relative;
-	}
+
 
 	.welcome{
 		text-align:right;
@@ -2548,6 +2555,7 @@ input, select, textarea {
 	.presentation{
 		clear:both;
 		color:white;
+		margin-left: 65px;
 	}
 
 /* Image */	
@@ -3242,11 +3250,11 @@ input, select, textarea {
 		}
 
 		.wrapper.style1-alt {
-			background-color: #4c4c4c;
+			background-color: #5c5c8a;
 		}
 
 		.wrapper.style2 {
-			background-color: #666666;
+			background-color: #9999ff;
 		}
 
 		.wrapper.style2-alt {
@@ -3254,7 +3262,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #999999;
+			background-color: #666699;
 		}
 
 		.wrapper.style3-alt {
@@ -3262,7 +3270,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style4 {
-			background-color: #000000;
+			background-color: #9494b8;
 		}
 
 		.wrapper.fullscreen {
@@ -3523,7 +3531,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #333333;
+		background: #33334d;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3764,10 +3772,7 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #666666, #ffffff);
-				background-image: -webkit-linear-gradient(to right, #666666, #ffffff);
-				background-image: -ms-linear-gradient(to right, #666666, #ffffff);
-				background-image: linear-gradient(to right, #666666, #ffffff);
+				background: #ffffff;
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3876,7 +3881,7 @@ input, select, textarea {
 		background-image: url("images/intro.svg");
 		background-position: top right;
 		background-repeat: no-repeat;
-		background-size: 100% 100%;
+		background-size: cover;
 	}
 
 		#intro p {
